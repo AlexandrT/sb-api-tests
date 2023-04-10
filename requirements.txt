@@ -1,0 +1,6 @@
+requests
+jsonschema
+
+pytest-html
+
+Faker		
