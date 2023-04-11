@@ -103,9 +103,7 @@ class ApiRequest:
 
         return r
 
-    def authenticate(self, token=None, x_auth_header=None):
-        if x_auth_header is not None:
-            self.add_headers({'X-Authorization': x_auth_header})
+    def authenticate(self, token=None):
         if token is not None:
             self.add_headers({'Authorization': token})
 
