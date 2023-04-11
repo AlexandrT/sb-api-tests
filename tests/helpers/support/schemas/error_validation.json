@@ -1,0 +1,23 @@
+{
+	"type": "object",
+	"required": ["detail"],
+	"properties": {
+		"detail": { 
+			"type": "array",
+			"item": {
+				"type": "object",
+				"required": ["loc", "msg", "type"],
+				"properties": {
+					"loc": { 
+						"type": "array",
+						"item": { "type": "string" }
+					},
+					"msg": { "type": "string" },
+					"type": { "type": "string" }
+				},
+				"additionalProperties": false
+			}
+		}
+	},
+	"additionalProperties": false
+}
